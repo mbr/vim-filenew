@@ -1,3 +1,8 @@
+if exists('g:loaded_filenew')
+    finish
+endif
+let g:loaded_filenew = 1
+
 python << endpython
 import uuid
 import vim
