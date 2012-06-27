@@ -139,3 +139,5 @@ class TemplateSelectWindow(object):
         win = TemplateSelectWindow(ft)
         win.open()
 endpython
+
+autocmd BufNewFile * py TemplateSelectWindow.buf_on_new_file()
