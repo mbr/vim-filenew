@@ -9,7 +9,11 @@ templates and will show a window allowing you to select one.
 Installation
 ------------
 
-Copy the ``filenew.vim`` into your ``.vim/plugin`` directory.
+Copy the ``filenew.vim`` into your ``.vim/plugin`` directory. Or use `VAM
+<https://github.com/MarcWeber/vim-addon-manager>`_ (for example, inside your
+``.vimrc``::
+
+  call vam#ActivateAddons(['github:mbr/vim-filenew'], {'auto_install' : 1})
 
 Usage
 -----
