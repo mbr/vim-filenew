@@ -80,6 +80,8 @@ class TemplateSelectWindow(object):
         vim.command('let b:filenew_id="%s"' % self.target_id)
 
         self.filelist = [fn for fn in sorted(self.templates.iterkeys()) if fn.endswith(self.ft)]
+        if not self.filelist:
+            return
 
         num_templates = len(self.filelist)
         vim.command('%dsplit SelectTemplate' % num_templates)
